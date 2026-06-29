@@ -1,0 +1,19 @@
+name: test workflow
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+   test_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Step
+        run: echo "This is a test step in the workflow."
+      - name: Display date and time
+        run: date
+      - name: list files in the current directory
+        run: ls -la
+      - name: Show current working directory
+        run: pwd 
