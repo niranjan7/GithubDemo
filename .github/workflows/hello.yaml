@@ -11,3 +11,9 @@ jobs:
         run: echo "This is another step in the workflow."
       - name: Final Step
         run: echo "This is the final step of the workflow."
+      - name: Display date and time
+        run: date
+      - name: list files in the current directory
+        run: ls -la
+      - name: Show current working directory
+        run: pwd
