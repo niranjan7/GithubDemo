@@ -23,8 +23,6 @@ jobs:
     steps:
       - name: Deploy Step
         run: echo "Deploying the application..."
-      - name: Check deployment status
-        run: "Deployment status: Successful"
       - name: Display environment variables
         run: printenv
       - name: Show disk space usage
