@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello World Step
-        run: echo "Hello, World!"_
+        run: echo "Hello, World!"
       - name: Another Step
         run: echo "This is another step in the workflow."
       - name: Final Step
@@ -24,7 +24,7 @@ jobs:
       - name: Deploy Step
         run: echo "Deploying the application..."
       - name: Check deployment status
-        run: echo "Deployment status: Successful"
+        run: "Deployment status: Successful"
       - name: Display environment variables
         run: printenv
       - name: Show disk space usage
