@@ -17,3 +17,12 @@ jobs:
         run: ls -la
       - name: Show current working directory
         run: pwd
+   hello_world_job_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World Step 2
+        run: echo "Hello from the second job!"
+      - name: Display system information
+        run: uname -a
+      - name: Check disk usage
+        run: df -h     
